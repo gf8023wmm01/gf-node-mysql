@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "globals": {
+    "__dirname": true
+  },
+  "rules": {
+    // 在这里添加你想要的 ESLint 规则
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-async-promise-executor": "off"
+  }
+}
