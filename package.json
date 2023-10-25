@@ -1,6 +1,6 @@
 {
   "name": "gf-node-mysql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "搭建依赖库的基础框架,支持rollup打包",
   "main": "index.ts",
   "scripts": {

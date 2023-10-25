@@ -3,7 +3,7 @@
     "declaration": true,
     "outDir": "./dist",
     "target": "ES6",
-    "module": "commonjs", //运行时：这个必须修改为commonjs，否则import无法使用，打包时，使用 ES6
+    "module": "ES6", //运行时：这个必须修改为commonjs，否则import无法使用，打包时，使用 ES6
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {

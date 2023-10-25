@@ -25,6 +25,13 @@ class MysqlInstance {
         });
         const connectInfo = await connect(connectInstance);
         this.instance = connectInfo;
+        this.instance.on("error", (err) => {
+          setTimeout(() => {
+            this.instance = null;
+            this.createSqlPool();
+          }, 5000);
+          console.error("MySQL连接已断开:", err);
+        });
         resolve(connectInfo);
       }
     });
